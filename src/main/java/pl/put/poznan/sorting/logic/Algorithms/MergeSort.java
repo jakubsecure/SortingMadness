@@ -27,9 +27,7 @@ public class MergeSort<T> implements SortInterface<T> {
 
     private void merge(T[] data, T[] aux, int left, int mid, int right, Comparator<? super T> comparator) {
 
-        for (int i = left; i <= right; i++) {
-            aux[i] = data[i];
-        }
+        if (right + 1 - left >= 0) System.arraycopy(data, left, aux, left, right + 1 - left);
 
         int i = left;
         int j = mid + 1;
