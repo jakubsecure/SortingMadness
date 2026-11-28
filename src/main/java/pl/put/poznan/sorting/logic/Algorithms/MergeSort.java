@@ -1,4 +1,4 @@
-package Algorithms;
+package pl.put.poznan.sorting.logic.Algorithms;
 
 import java.util.Arrays;
 import java.util.Comparator;
